@@ -1,0 +1,20 @@
+A milter (mail filter) that checks whether the MTA is likely to be able to
+deliver a mail message to a next hop MX. This can be useful if one of the
+primary jobs of the MTA is to forward mail on to another MTA, or if the MTA
+acts as a secondary for a set of domains.
+
+The goal is to avoid generating backscatter. The milter tries to avoid
+accepting mail that will not be deliverable, since once the MTA accepts a
+message into its queue, it becomes its responsibility to send delivery status
+notifications. In particular, it's desirable to avoid sending DSNs for spam
+(this backscatter just adds to the spam problem), and a lot of spam tends to be
+uundeliverable. Even worse, many of the DSNs will themselves be undeliverable,
+since the sender address is usually forged. That means that the postmaster
+mailbox becomes unreadable, because it fills up with all the undeliverable
+DSNs.
+
+Since one of the purposes of an MTA being able to send mail to a next
+hop is to be able to queue messages while the next hop is not available,
+milter-checkrcpt keeps a database of results from past checks, and uses
+that database when the next-hop MTA is not available to check in real
+time.
