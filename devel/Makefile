@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2238 2016/04/14 11:07:18 leot Exp $
+# $NetBSD: Makefile,v 1.2242 2016/04/19 12:36:36 fhajny Exp $
 #
 
 COMMENT=	Development utilities
@@ -877,6 +877,7 @@ SUBDIR+=	p5-Devel-CheckBin
 SUBDIR+=	p5-Devel-CheckCompiler
 SUBDIR+=	p5-Devel-CheckLib
 SUBDIR+=	p5-Devel-CheckOS
+SUBDIR+=	p5-Devel-Confess
 SUBDIR+=	p5-Devel-Cover
 SUBDIR+=	p5-Devel-Cycle
 SUBDIR+=	p5-Devel-Declare
@@ -1166,6 +1167,7 @@ SUBDIR+=	p5-MooX-HandlesVia
 SUBDIR+=	p5-MooX-Log-Any
 SUBDIR+=	p5-MooX-Options
 SUBDIR+=	p5-MooX-Roles-Pluggable
+SUBDIR+=	p5-MooX-StrictConstructor
 SUBDIR+=	p5-MooX-Types-MooseLike
 SUBDIR+=	p5-MooX-Types-MooseLike-Numeric
 SUBDIR+=	p5-MooX-late
@@ -1476,6 +1478,7 @@ SUBDIR+=	p5-Test-Pod-Spelling-CommonMistakes
 SUBDIR+=	p5-Test-Refcount
 SUBDIR+=	p5-Test-Reporter
 SUBDIR+=	p5-Test-Requires
+SUBDIR+=	p5-Test-Requires-Git
 SUBDIR+=	p5-Test-Roo
 SUBDIR+=	p5-Test-Script
 SUBDIR+=	p5-Test-Script-Run
@@ -1699,6 +1702,7 @@ SUBDIR+=	py-flakes
 SUBDIR+=	py-flexmock
 SUBDIR+=	py-funcparserlib
 SUBDIR+=	py-funcsigs
+SUBDIR+=	py-futures
 SUBDIR+=	py-game
 SUBDIR+=	py-generate
 SUBDIR+=	py-gflags
