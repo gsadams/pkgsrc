@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1166 2016/04/15 12:17:38 wiz Exp $
+# $NetBSD: Makefile,v 1.1170 2016/04/23 18:32:56 adam Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -586,11 +586,13 @@ SUBDIR+=	py-django-classy-tags
 SUBDIR+=	py-django-cms
 SUBDIR+=	py-django-cmsplugin_gallery
 SUBDIR+=	py-django-easy-thumbnails
+SUBDIR+=	py-django-filer
 SUBDIR+=	py-django-inline-ordering
 SUBDIR+=	py-django-mezzanine-filebrowser
 SUBDIR+=	py-django-mezzanine-grappelli
 SUBDIR+=	py-django-mptt
 SUBDIR+=	py-django-photologue
+SUBDIR+=	py-django-polymorphic
 SUBDIR+=	py-django-registration
 SUBDIR+=	py-django-reversion
 SUBDIR+=	py-django-sekizai
@@ -844,6 +846,7 @@ SUBDIR+=	wiliki
 SUBDIR+=	wmd
 SUBDIR+=	wml
 SUBDIR+=	wordpress
+SUBDIR+=	wslay
 SUBDIR+=	www6to4
 SUBDIR+=	wwwcount
 SUBDIR+=	wwwoffle

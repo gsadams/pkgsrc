@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-doc_kcontrol_CMakeLists.txt,v 1.1 2016/04/22 08:04:23 jperkin Exp $
 
 Add various bits which build fine on Darwin.
 

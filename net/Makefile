@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1107 2016/04/14 21:58:27 abs Exp $
+# $NetBSD: Makefile,v 1.1110 2016/04/25 20:39:15 fhajny Exp $
 #
 
 COMMENT=	Networking tools
@@ -120,8 +120,8 @@ SUBDIR+=	ed2k-gtk-gui
 SUBDIR+=	edonkey2k
 SUBDIR+=	ekiga
 SUBDIR+=	entropy
-SUBDIR+=	erlang-p1_sip
-SUBDIR+=	erlang-p1_stun
+SUBDIR+=	erlang-esip
+SUBDIR+=	erlang-stun
 SUBDIR+=	ether2dns
 SUBDIR+=	etherape
 SUBDIR+=	ettercap
@@ -614,7 +614,6 @@ SUBDIR+=	py-metar
 SUBDIR+=	py-ncclient
 SUBDIR+=	py-netaddr
 SUBDIR+=	py-netifaces
-SUBDIR+=	py-netlib
 SUBDIR+=	py-netsnmp
 SUBDIR+=	py-omniORBpy
 SUBDIR+=	py-pcap
@@ -753,7 +752,6 @@ SUBDIR+=	tkined
 SUBDIR+=	tn5250
 SUBDIR+=	tnftp
 SUBDIR+=	tnftpd
-SUBDIR+=	tvnjviewer
 SUBDIR+=	tor
 SUBDIR+=	torrentutils
 SUBDIR+=	totd
@@ -768,6 +766,7 @@ SUBDIR+=	tsclient
 SUBDIR+=	tsocks
 SUBDIR+=	tspc
 SUBDIR+=	ttt
+SUBDIR+=	tvnjviewer
 SUBDIR+=	twittering-mode
 SUBDIR+=	twitux
 SUBDIR+=	u6rd

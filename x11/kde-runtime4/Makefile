@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2016/04/11 17:06:03 jperkin Exp $
+# $NetBSD: Makefile,v 1.64 2016/04/22 08:04:23 jperkin Exp $
 
 DISTNAME=	kde-runtime-15.12.0
 PKGNAME=	${DISTNAME:S/-1/4-1/}

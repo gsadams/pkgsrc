@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2016/01/10 19:05:27 markd Exp $
+@comment $NetBSD: PLIST,v 1.9 2016/04/22 08:04:23 jperkin Exp $
 bin/kcmshell4
 bin/kde-cp
 bin/kde-mv

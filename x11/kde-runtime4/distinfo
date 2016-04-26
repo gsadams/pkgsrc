@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.13 2016/01/10 19:05:27 markd Exp $
+$NetBSD: distinfo,v 1.14 2016/04/22 08:04:23 jperkin Exp $
 
 SHA1 (kde-runtime-15.12.0.tar.xz) = 30da08dfb51fade220df7f8cf3e3eab5669a2e18
 RMD160 (kde-runtime-15.12.0.tar.xz) = 37e6c3693e81b31a4b92a5eeb35f8c84602bf86d
