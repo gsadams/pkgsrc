@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2244 2016/04/25 20:39:15 fhajny Exp $
+# $NetBSD: Makefile,v 1.2246 2016/05/03 14:53:46 fhajny Exp $
 #
 
 COMMENT=	Development utilities
@@ -74,6 +74,7 @@ SUBDIR+=	automoc4
 SUBDIR+=	avl
 SUBDIR+=	avltree
 SUBDIR+=	bam
+SUBDIR+=	bats
 SUBDIR+=	bazel
 SUBDIR+=	bcc
 SUBDIR+=	bglibs
@@ -1713,6 +1714,7 @@ SUBDIR+=	py-gobject3-common
 SUBDIR+=	py-google-apputils
 SUBDIR+=	py-greenlet
 SUBDIR+=	py-h5py
+SUBDIR+=	py-hash
 SUBDIR+=	py-hg-fastimport
 SUBDIR+=	py-hg-git
 SUBDIR+=	py-hglib
