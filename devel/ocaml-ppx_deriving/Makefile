@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2016/02/23 15:03:49 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2016/05/06 12:08:58 jaapb Exp $
 
 GITHUB_PROJECT=	ppx_deriving
-DISTNAME=	${GITHUB_PROJECT}-3.1
+DISTNAME=	${GITHUB_PROJECT}-3.3
 PKGNAME=	ocaml-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=whitequark/}

@@ -1,4 +1,4 @@
-# $NetBSD: print-plist.mk,v 1.28 2016/04/10 15:58:03 joerg Exp $
+# $NetBSD: print-plist.mk,v 1.30 2016/05/10 16:54:05 jperkin Exp $
 
 ###
 ### Automatic PLIST generation
@@ -126,6 +126,7 @@ print-PLIST:
 			if ('$$genlinks') print $$0;			\
 			next;						\
 		}							\
+		/^man\// { sub("\\.gz$$", ""); }			\
 		{ print $$0; }'
 	${RUN}\
 	for i in `${_PRINT_PLIST_DIRS_CMD}				\
@@ -138,7 +139,8 @@ print-PLIST:
 				{ sub("^${PKGINFODIR}/", "info/"); }	\
 				{ sub("^${PKGMANDIR}/", "man/"); }	\
 				/^${PKG_DBDIR:S|^${PREFIX}/||:S|/|\\/|g}(\/|$$)/ { next; } \
-				/^${PKGINFODIR:S|/|\\/|g}$$/ { next; }'` ;	\
+				/^${PKGINFODIR:S|/|\\/|g}$$/ { next; }	\
+				{ print $$0; }'` ;			\
 	do								\
 		if [ `${LS} -la ${DESTDIR}${PREFIX}/$$i | ${WC} -l` = 3 ]; then	\
 			${ECHO} @pkgdir $$i | ${AWK} '			\
