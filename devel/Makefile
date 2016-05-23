@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2262 2016/05/18 12:22:27 wiz Exp $
+# $NetBSD: Makefile,v 1.2265 2016/05/21 21:45:25 youri Exp $
 #
 
 COMMENT=	Development utilities
@@ -431,6 +431,8 @@ SUBDIR+=	lemon
 SUBDIR+=	lettuce
 SUBDIR+=	libFoundation
 SUBDIR+=	libFoundation-examples
+SUBDIR+=	libappindicator
+SUBDIR+=	libappindicator3
 SUBDIR+=	libarena
 SUBDIR+=	libargparse
 SUBDIR+=	libast
@@ -448,8 +450,14 @@ SUBDIR+=	libconfig
 SUBDIR+=	libctl
 SUBDIR+=	libdaemon
 SUBDIR+=	libdatrie
+SUBDIR+=	libdbusmenu-glib
+SUBDIR+=	libdbusmenu-gtk
+SUBDIR+=	libdbusmenu-gtk-doc
+SUBDIR+=	libdbusmenu-gtk3
+SUBDIR+=	libdbusmenu-jsonloader
 SUBDIR+=	libdbusmenu-qt
 SUBDIR+=	libdbusmenu-qt5
+SUBDIR+=	libdbusmenu-tools
 SUBDIR+=	libdevq
 SUBDIR+=	libdnsres
 SUBDIR+=	libdockapp
@@ -488,6 +496,9 @@ SUBDIR+=	libhfs
 SUBDIR+=	libhid
 SUBDIR+=	libiberty
 SUBDIR+=	libidn
+SUBDIR+=	libindicator
+SUBDIR+=	libindicator-tools
+SUBDIR+=	libindicator3
 SUBDIR+=	libinotify
 SUBDIR+=	libixp
 SUBDIR+=	libjit
@@ -593,6 +604,7 @@ SUBDIR+=	makedepf90
 SUBDIR+=	maketool
 SUBDIR+=	man-pages
 SUBDIR+=	mantis
+SUBDIR+=	mate-common
 SUBDIR+=	matio
 SUBDIR+=	mcpp
 SUBDIR+=	mdds

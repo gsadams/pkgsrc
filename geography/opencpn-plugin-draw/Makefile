@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2016/04/24 10:21:54 bouyer Exp $
+# $NetBSD: Makefile,v 1.3 2016/05/23 13:10:15 bouyer Exp $
 #
 
 VERSION=	20160415
+PKGREVISION=	2
 DISTNAME=	ocpn_draw_pi-${VERSION}
 PKGNAME=	opencpn-plugin-draw-${VERSION}
 CATEGORIES=	geography

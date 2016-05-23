@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.665 2016/05/06 13:41:04 fhajny Exp $
+# $NetBSD: Makefile,v 1.670 2016/05/23 10:52:04 youri Exp $
 #
 
 COMMENT=	System utilities
@@ -49,6 +49,9 @@ SUBDIR+=	bubblemon
 SUBDIR+=	bup
 SUBDIR+=	burn
 SUBDIR+=	burp
+SUBDIR+=	caja
+SUBDIR+=	caja-dropbox
+SUBDIR+=	caja-extensions
 SUBDIR+=	capistrano
 SUBDIR+=	ccd2iso
 SUBDIR+=	ccze
@@ -293,6 +296,8 @@ SUBDIR+=	lavaps
 SUBDIR+=	libbaloo4
 SUBDIR+=	libburn
 SUBDIR+=	libdevkit-gobject
+SUBDIR+=	libfm
+SUBDIR+=	libfm-extra
 SUBDIR+=	libgamin
 SUBDIR+=	libgksu
 SUBDIR+=	libgtop
@@ -314,8 +319,15 @@ SUBDIR+=	logrider
 SUBDIR+=	logrot
 SUBDIR+=	logrotate
 SUBDIR+=	lsof
+SUBDIR+=	lxmenu-data
+SUBDIR+=	lxpanel
+SUBDIR+=	lxtask
 SUBDIR+=	magicrescue
 SUBDIR+=	manifold
+SUBDIR+=	mate-notification-daemon
+SUBDIR+=	mate-power-manager
+SUBDIR+=	mate-sensors-applet
+SUBDIR+=	mate-system-monitor
 SUBDIR+=	mbmon
 SUBDIR+=	mc
 SUBDIR+=	mc46

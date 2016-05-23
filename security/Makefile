@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.576 2016/05/06 13:41:40 fhajny Exp $
+# $NetBSD: Makefile,v 1.578 2016/05/21 21:51:42 youri Exp $
 #
 
 COMMENT=	Security tools
@@ -181,6 +181,7 @@ SUBDIR+=	log2timeline
 SUBDIR+=	logcheck
 SUBDIR+=	lsh
 SUBDIR+=	lua-sec
+SUBDIR+=	mate-polkit
 SUBDIR+=	mbedtls
 SUBDIR+=	mcrypt
 SUBDIR+=	md4-collision
@@ -348,6 +349,7 @@ SUBDIR+=	pkcs11-helper
 SUBDIR+=	pks
 SUBDIR+=	policykit
 SUBDIR+=	policykit-gnome
+SUBDIR+=	polkit
 SUBDIR+=	polkit-qt
 SUBDIR+=	portsentry
 SUBDIR+=	prelude-correlator
