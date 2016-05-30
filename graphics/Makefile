@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.737 2016/05/23 10:43:19 youri Exp $
+# $NetBSD: Makefile,v 1.739 2016/05/26 08:47:46 markd Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -11,6 +11,7 @@ SUBDIR+=	GMT
 SUBDIR+=	GUIlib
 SUBDIR+=	GraphicsMagick
 SUBDIR+=	ImageMagick
+SUBDIR+=	ImageMagick6
 SUBDIR+=	ImageViewer
 SUBDIR+=	Mesa
 SUBDIR+=	MesaDemos
@@ -39,6 +40,7 @@ SUBDIR+=	blender
 SUBDIR+=	blender-doc
 SUBDIR+=	blinkenthemes
 SUBDIR+=	blinkentools
+SUBDIR+=	breeze-icons
 SUBDIR+=	cairo
 SUBDIR+=	cairo-gobject
 SUBDIR+=	cairomm
@@ -254,6 +256,8 @@ SUBDIR+=	kdegraphics-strigi-analyzer
 SUBDIR+=	kdegraphics-thumbnailers
 SUBDIR+=	kdegraphics3
 SUBDIR+=	kgamma
+SUBDIR+=	kiconthemes
+SUBDIR+=	kimageformats
 SUBDIR+=	kipi-plugins
 SUBDIR+=	kipi-plugins-calendar-kde3
 SUBDIR+=	kipi-plugins-kde3
@@ -262,6 +266,7 @@ SUBDIR+=	koverartist
 SUBDIR+=	kphotoalbum
 SUBDIR+=	kphotobook
 SUBDIR+=	kphotools
+SUBDIR+=	kplotting
 SUBDIR+=	kruler
 SUBDIR+=	ksaneplugin
 SUBDIR+=	ksnapshot

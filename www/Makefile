@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1173 2016/05/13 20:03:17 adam Exp $
+# $NetBSD: Makefile,v 1.1176 2016/05/29 02:33:31 jmmv Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -142,6 +142,7 @@ SUBDIR+=	htmldoc
 SUBDIR+=	htmldoc-x11
 SUBDIR+=	htmlfix
 SUBDIR+=	htmllint
+SUBDIR+=	http-parser
 SUBDIR+=	http_load
 SUBDIR+=	icedtea-web
 SUBDIR+=	ies4linux
@@ -154,6 +155,7 @@ SUBDIR+=	kahua
 SUBDIR+=	kannel
 SUBDIR+=	kdewebdev3
 SUBDIR+=	kdewebdev4
+SUBDIR+=	kdewebkit
 SUBDIR+=	lhs
 SUBDIR+=	libghttp
 SUBDIR+=	libgtkhtml
@@ -729,6 +731,7 @@ SUBDIR+=	ruby-http_router
 SUBDIR+=	ruby-httpclient
 SUBDIR+=	ruby-innate
 SUBDIR+=	ruby-jekyll
+SUBDIR+=	ruby-jekyll-archives
 SUBDIR+=	ruby-jekyll-coffeescript
 SUBDIR+=	ruby-jekyll-gist
 SUBDIR+=	ruby-jekyll-paginate

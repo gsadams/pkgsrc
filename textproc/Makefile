@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.882 2016/04/29 11:55:06 wiz Exp $
+# $NetBSD: Makefile,v 1.885 2016/05/29 07:19:29 cheusov Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -326,11 +326,15 @@ SUBDIR+=	java-native-hyperestraier
 SUBDIR+=	java-pure-hyperestraier
 SUBDIR+=	jdom
 SUBDIR+=	jing
+SUBDIR+=	jrep
 SUBDIR+=	json-c
 SUBDIR+=	json-glib
 SUBDIR+=	jsoncpp
 SUBDIR+=	kakasi
+SUBDIR+=	kapidox
 SUBDIR+=	kbanner
+SUBDIR+=	kcodecs
+SUBDIR+=	kcompletion
 SUBDIR+=	kdoc
 SUBDIR+=	latex2html
 SUBDIR+=	libclucene
@@ -839,6 +843,7 @@ SUBDIR+=	serd
 SUBDIR+=	sgrep
 SUBDIR+=	shared-desktop-ontologies
 SUBDIR+=	sift
+SUBDIR+=	sonnet
 SUBDIR+=	soprano
 SUBDIR+=	sord
 SUBDIR+=	source-highlight
