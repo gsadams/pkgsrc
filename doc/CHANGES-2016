@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2016,v 1.2212 2016/05/29 21:32:03 wiz Exp $
+$NetBSD: CHANGES-2016,v 1.2220 2016/05/31 07:21:21 wen Exp $
 
 Changes to the packages collection and infrastructure in 2016:
 
@@ -2879,3 +2879,12 @@ Changes to the packages collection and infrastructure in 2016:
 	Updated devel/py-test-runner to 2.8 [wiz 2016-05-29]
 	Updated devel/py-virtualenv to 15.0.2 [wiz 2016-05-29]
 	Updated devel/waf to 1.8.21 [wiz 2016-05-29]
+	Added devel/libite version 1.6.0 [abs 2016-05-29]
+	Updated net/inadyn to 1.99.15 [abs 2016-05-29]
+	Updated graphics/feh to 2.15.4 [leot 2016-05-30]
+	Updated archivers/advancecomp to 1.19 [mef 2016-05-30]
+	Updated www/webkit-gtk to 2.12.3 [leot 2016-05-30]
+	Updated devel/p5-Dist-Zilla to 6.005 [mef 2016-05-30]
+	Added x11/xtermcontrol version 3.3 [khorben 2016-05-30]
+	Downgraded devel/gmake to 4.1nb2 [tnn 2016-05-31]
+	Updated devel/p5-MooseX-ClassAttribute to 0.29 [wen 2016-05-31]
