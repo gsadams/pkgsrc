@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2016,v 1.2234 2016/06/01 12:46:08 wiz Exp $
+$NetBSD: CHANGES-2016,v 1.2251 2016/06/04 02:29:18 tsutsui Exp $
 
 Changes to the packages collection and infrastructure in 2016:
 
@@ -2902,3 +2902,27 @@ Changes to the packages collection and infrastructure in 2016:
 	Updated devel/p5-Capture-Tiny to 0.42 [wen 2016-06-01]
 	Updated www/p5-Dancer2 to 0.200000 [wen 2016-06-01]
 	Updated pkgtools/url2pkg to 2.25 [wiz 2016-06-01]
+	Updated net/syncthing to 0.13.4 [gdt 2016-06-01]
+	Updated www/py-werkzeug to 0.11.10 [kleink 2016-06-01]
+	Updated www/py-werkzeug-docs to 0.11.10 [kleink 2016-06-01]
+	Updated www/py-flask to 0.11 [kleink 2016-06-01]
+	Updated www/py-flask-uploads to 0.2.0nb1 [kleink 2016-06-01]
+	Updated www/vimb to 2.11nb3 [leot 2016-06-01]
+	Updated mail/mutt to 1.6.1nb1 [tonio 2016-06-01]
+	Updated security/openssl to 1.0.2hnb1 [jperkin 2016-06-02]
+	Updated audio/mpg321 to 0.3.2 [jperkin 2016-06-02]
+	Updated net/cacti to 0.8.8h [hauke 2016-06-02]
+	Updated net/cacti-spine to 0.8.8h [hauke 2016-06-02]
+	Updated databases/py-sqlalchemy to 1.0.13 [adam 2016-06-02]
+	Added audio/gst-plugins1-opus version 1.8.1 [prlw1 2016-06-02]
+	Updated security/netpgpverify to 20160313 [agc 2016-06-02]
+	Updated security/libnetpgpverify to 20160313 [agc 2016-06-02]
+	Updated net/ntp4 to 4.2.8p8 [taca 2016-06-03]
+	Updated security/py-certbot to 0.8.0 [fhajny 2016-06-03]
+	Updated net/powerdns to 3.4.9 [fhajny 2016-06-03]
+	Updated net/powerdns-ldap to 3.4.9 [fhajny 2016-06-03]
+	Updated net/powerdns-mysql to 3.4.9 [fhajny 2016-06-03]
+	Updated net/powerdns-pgsql to 3.4.9 [fhajny 2016-06-03]
+	Updated security/pgpdump to 0.31 [bsiegert 2016-06-03]
+	Updated security/stunnel to 5.32 [jym 2016-06-04]
+	Updated net/mikutter to 3.4.0-alpha3 [tsutsui 2016-06-04]
