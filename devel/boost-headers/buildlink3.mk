@@ -11,6 +11,7 @@ BUILDLINK_DEPMETHOD.boost-headers?=	build
 BUILDLINK_PKGSRCDIR.boost-headers?=	../../devel/boost-headers
 
 PTHREAD_OPTS+=		require
+PTHREAD_AUTO_VARS?=	yes
 .include "../../mk/pthread.buildlink3.mk"
 .endif # BOOST_HEADERS_BUILDLINK3_MK
 
