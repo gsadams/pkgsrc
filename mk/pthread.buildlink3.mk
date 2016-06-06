@@ -116,7 +116,7 @@ PKG_SKIP_REASON+= "${PKGNAME} requires a working pthreads implementation."
 .  endif
 .endif
 
-PTHREAD_AUTO_VARS?=	no
+PTHREAD_AUTO_VARS?=	yes
 
 .if ${PTHREAD_TYPE} == "native"
 BUILDLINK_TREE+=		pthread -pthread
