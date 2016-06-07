@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2270 2016/06/02 05:02:23 jnemeth Exp $
+# $NetBSD: Makefile,v 1.2273 2016/06/06 21:33:31 alnsn Exp $
 #
 
 COMMENT=	Development utilities
@@ -602,6 +602,7 @@ SUBDIR+=	lokalize
 SUBDIR+=	ltsa
 SUBDIR+=	lua-BitOp
 SUBDIR+=	lua-alt-getopt
+SUBDIR+=	lua-coxpcall
 SUBDIR+=	lua-filesystem
 SUBDIR+=	lua-gi
 SUBDIR+=	lua-ljsyscall
@@ -613,6 +614,7 @@ SUBDIR+=	lua-lrexlib-posix
 SUBDIR+=	lua-mode
 SUBDIR+=	lua-penlight
 SUBDIR+=	lua-posix
+SUBDIR+=	lua-rocks
 SUBDIR+=	lua-stdlib
 SUBDIR+=	lutok
 SUBDIR+=	lwp
@@ -1016,6 +1018,7 @@ SUBDIR+=	p5-File-Path-Tiny
 SUBDIR+=	p5-File-PathConvert
 SUBDIR+=	p5-File-Policy
 SUBDIR+=	p5-File-Save-Home
+SUBDIR+=	p5-File-Share
 SUBDIR+=	p5-File-ShareDir
 SUBDIR+=	p5-File-ShareDir-Install
 SUBDIR+=	p5-File-ShareDir-ProjectDistDir
