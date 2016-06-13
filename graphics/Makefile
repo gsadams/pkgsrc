@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.739 2016/05/26 08:47:46 markd Exp $
+# $NetBSD: Makefile,v 1.742 2016/06/13 00:27:01 youri Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -28,6 +28,7 @@ SUBDIR+=	aalib
 SUBDIR+=	adwaita-icon-theme
 SUBDIR+=	agg
 SUBDIR+=	aqsis
+SUBDIR+=	arc-theme
 SUBDIR+=	artist
 SUBDIR+=	asymptote
 SUBDIR+=	autopano-sift-C
@@ -191,6 +192,7 @@ SUBDIR+=	gnome-backgrounds
 SUBDIR+=	gnome-icon-theme
 SUBDIR+=	gnome-icon-theme-extras
 SUBDIR+=	gnome-icon-theme-symbolic
+SUBDIR+=	gnome-themes-standard
 SUBDIR+=	gnuplot
 SUBDIR+=	gocr
 SUBDIR+=	goocanvas
@@ -383,6 +385,7 @@ SUBDIR+=	p5-cairo
 SUBDIR+=	p5-cairo-gobject
 SUBDIR+=	p5-clutter
 SUBDIR+=	panomatic
+SUBDIR+=	paper-icon-theme
 SUBDIR+=	pdiff
 SUBDIR+=	pear-Image_Canvas
 SUBDIR+=	pear-Image_Color

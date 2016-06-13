@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2273 2016/06/06 21:33:31 alnsn Exp $
+# $NetBSD: Makefile,v 1.2277 2016/06/13 02:08:23 kamil Exp $
 #
 
 COMMENT=	Development utilities
@@ -1040,6 +1040,7 @@ SUBDIR+=	p5-Find-Lib
 SUBDIR+=	p5-FindBin-libs
 SUBDIR+=	p5-Format-Human-Bytes
 SUBDIR+=	p5-FreezeThaw
+SUBDIR+=	p5-Function-Parameters
 SUBDIR+=	p5-Future
 SUBDIR+=	p5-Getopt-ArgvFile
 SUBDIR+=	p5-Getopt-Euclid
@@ -1660,6 +1661,7 @@ SUBDIR+=	php-sysvshm
 SUBDIR+=	php-xcache
 SUBDIR+=	php-xdebug
 SUBDIR+=	physfs
+SUBDIR+=	picasm
 SUBDIR+=	picopb
 SUBDIR+=	picp
 SUBDIR+=	picprg
@@ -1706,6 +1708,7 @@ SUBDIR+=	py-boost
 SUBDIR+=	py-buildbot
 SUBDIR+=	py-buildbot-slave
 SUBDIR+=	py-cached-property
+SUBDIR+=	py-capstone
 SUBDIR+=	py-cffi
 SUBDIR+=	py-characteristic
 SUBDIR+=	py-checker
@@ -1742,6 +1745,7 @@ SUBDIR+=	py-expect
 SUBDIR+=	py-extras
 SUBDIR+=	py-fann2
 SUBDIR+=	py-fastimport
+SUBDIR+=	py-filebytes
 SUBDIR+=	py-filechunkio
 SUBDIR+=	py-flake8
 SUBDIR+=	py-flakes

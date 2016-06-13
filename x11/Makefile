@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.793 2016/05/30 22:58:45 khorben Exp $
+# $NetBSD: Makefile,v 1.797 2016/06/12 20:32:59 kamil Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -47,6 +47,7 @@ SUBDIR+=	dri2proto
 SUBDIR+=	dri3proto
 SUBDIR+=	driconf
 SUBDIR+=	dtx11session
+SUBDIR+=	dunst
 SUBDIR+=	dxpc
 SUBDIR+=	ede
 SUBDIR+=	editres
@@ -132,6 +133,7 @@ SUBDIR+=	hs-X11
 SUBDIR+=	hs-X11-xft
 SUBDIR+=	hsetroot
 SUBDIR+=	hyena
+SUBDIR+=	i3lock
 SUBDIR+=	iceauth
 SUBDIR+=	ico
 SUBDIR+=	imwheel
@@ -483,6 +485,7 @@ SUBDIR+=	renderproto9
 SUBDIR+=	rep-gtk2
 SUBDIR+=	resourceproto
 SUBDIR+=	rgb
+SUBDIR+=	rofi
 SUBDIR+=	rox-session
 SUBDIR+=	rox-wallpaper
 SUBDIR+=	rstart
@@ -658,6 +661,7 @@ SUBDIR+=	xfce4-exo
 SUBDIR+=	xfce4-eyes-plugin
 SUBDIR+=	xfce4-garcon
 SUBDIR+=	xfce4-gtk2-engine
+SUBDIR+=	xfce4-indicator-plugin
 SUBDIR+=	xfce4-kbdleds-plugin
 SUBDIR+=	xfce4-notes-plugin
 SUBDIR+=	xfce4-notifyd
