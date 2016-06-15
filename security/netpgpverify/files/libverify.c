@@ -2021,7 +2021,8 @@ read_ascii_armor(pgpv_cursor_t *cursor, pgpv_mem_t *mem, const char *filename)
 		return 0;
 	}
 	litdata.u.litdata.len = litdata.s.size = (size_t)(p - datastart);
-	p += strlen(SIGSTART);
+	/* this puts p at the newline character, so it will find \n\n if no version */
+	p += strlen(SIGSTART) - 1;
 	if ((p = find_bin_string(p, mem->size, "\n\n",  2)) == NULL) {
 		snprintf(cursor->why, sizeof(cursor->why),
 			"malformed armed signature at %zu", (size_t)(p - mem->mem));
