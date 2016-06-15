@@ -27,6 +27,9 @@
 X11_TYPE?=	native
 .endif
 
+.if !defined(CPP) || ${CPP} == "cpp"
+CPP=		${CC} -E ${CPP_PRECOMP_FLAGS}
+.endif
 .if empty(MACHINE_PLATFORM:MDarwin-[0-8].*-*)
 ECHO_N?=	/bin/echo -n
 .else
