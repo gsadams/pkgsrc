@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2016,v 1.2569 2016/06/20 21:24:01 jperkin Exp $
+$NetBSD: CHANGES-2016,v 1.2572 2016/06/21 14:00:42 mef Exp $
 
 Changes to the packages collection and infrastructure in 2016:
 
@@ -3764,3 +3764,6 @@ Changes to the packages collection and infrastructure in 2016:
 	Updated www/ocsigen to 2.7 [jaapb 2016-06-20]
 	Added time/taskwarrior version 2.5.1 [kamil 2016-06-20]
 	mk/bsd.pkg.mk: started freeze for pkgsrc-2016Q2 branch [jperkin 2016-06-20]
+	Updated x11/mlterm to 3.7.1 [tsutsui 2016-06-21]
+	Updated archivers/libarchive to 3.2.1nb1 [joerg 2016-06-21]
+	Updated security/p5-Bytes-Random-Secure to 0.29 [mef 2016-06-21]
