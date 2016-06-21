@@ -18,6 +18,7 @@ BUILD_DEPENDS+=	p5-Perl4-CoreLibs-[0-9]*:../../devel/p5-Perl4-CoreLibs
 
 USE_GCC_RUNTIME=	yes
 
+USE_MULTIARCH=		bin lib
 USE_TOOLS+=		fgrep gmake perl:run
 BUILD_TARGET=		depend all
 TEST_TARGET=		tests
@@ -28,6 +29,7 @@ CONFIGURE_SCRIPT=	./config
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--install_prefix=${DESTDIR}
 CONFIGURE_ARGS+=	--openssldir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--libdir=lib${LIBARCHSUFFIX}
 CONFIGURE_ARGS+=	shared no-fips
 
 .include "../../mk/compiler.mk"
