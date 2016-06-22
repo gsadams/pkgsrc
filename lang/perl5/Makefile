@@ -118,7 +118,7 @@ PERL5_API_VERS_cmd=	\
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde
-CONFIGURE_ARGS+=	-Dstartperl="#!${PREFIX}/bin/perl"
+CONFIGURE_ARGS+=	-Dstartperl="\#!${PREFIX}/bin/perl"
 MAKE_ENV+=		LC_ALL="C"
 
 .if ${OPSYS} == "SunOS"
