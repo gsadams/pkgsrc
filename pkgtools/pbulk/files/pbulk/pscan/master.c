@@ -1,4 +1,4 @@
-/* $NetBSD: master.c,v 1.11 2015/12/07 16:52:40 joerg Exp $ */
+/* $NetBSD: master.c,v 1.12 2016/06/23 15:07:39 joerg Exp $ */
 
 /*-
  * Copyright (c) 2007, 2009 Joerg Sonnenberger <joerg@NetBSD.org>.

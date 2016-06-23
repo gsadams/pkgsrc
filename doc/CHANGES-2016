@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2016,v 1.2572 2016/06/21 14:00:42 mef Exp $
+$NetBSD: CHANGES-2016,v 1.2578 2016/06/23 15:24:44 maya Exp $
 
 Changes to the packages collection and infrastructure in 2016:
 
@@ -3767,3 +3767,9 @@ Changes to the packages collection and infrastructure in 2016:
 	Updated x11/mlterm to 3.7.1 [tsutsui 2016-06-21]
 	Updated archivers/libarchive to 3.2.1nb1 [joerg 2016-06-21]
 	Updated security/p5-Bytes-Random-Secure to 0.29 [mef 2016-06-21]
+	Updated archivers/lhasa to 0.3.1 [wiz 2016-06-22]
+	Updated security/libtasn1 to 4.8 [wiz 2016-06-22]
+	Updated time/remind to 3.1.15 [wiz 2016-06-22]
+	Updated textproc/expat to 2.2.0 [drochner 2016-06-22]
+	Updated multimedia/ffmpeg2 to 2.8.7nb2 [fly 2016-06-23]
+	Updated multimedia/ffmpeg3 to 3.0.2nb2 [fly 2016-06-23]

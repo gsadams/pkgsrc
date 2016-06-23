@@ -132,6 +132,10 @@ readpassphrase(const char *prompt, char *buf, size_t bufsiz, int flags)
 #include <termios.h>
 #include <unistd.h>
 
+#ifndef _PATH_TTY
+#define _PATH_TTY "/dev/tty"
+#endif
+
 #ifdef TCSASOFT
 # define _T_FLUSH	(TCSAFLUSH|TCSASOFT)
 #else
@@ -149,7 +153,7 @@ readpassphrase(const char *prompt, char *buf, size_t bufsiz, int flags)
                     M(M(SIGQUIT, SIGTERM), \
                       M(M(SIGTSTP, SIGTTIN), SIGTTOU)))
 
-static volatile sig_atomic_t *signo;
+static volatile sig_atomic_t signo[MAX_SIGNO + 1];
 
 static void
 handler(int s)
@@ -172,10 +176,6 @@ readpassphrase(const char *prompt, char *buf, size_t bufsiz, int flags)
 	if (bufsiz == 0) {
 		errno = EINVAL;
 		return(NULL);
-	}
-
-	if (signo == NULL) {
-		signo = calloc(MAX_SIGNO + 1, sizeof(sig_atomic_t));
 	}
 
 restart:
