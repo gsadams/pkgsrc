@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1178 2016/06/11 20:11:18 kamil Exp $
+# $NetBSD: Makefile,v 1.1181 2016/06/19 12:53:49 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -84,6 +84,7 @@ SUBDIR+=	clisp-fastcgi
 #SUBDIR+=	contao		# only contains Makefile fragments
 SUBDIR+=	contao35
 SUBDIR+=	contao41
+SUBDIR+=	contao42
 SUBDIR+=	cppcms
 SUBDIR+=	crawl
 SUBDIR+=	cronolog
@@ -157,6 +158,7 @@ SUBDIR+=	kdewebdev3
 SUBDIR+=	kdewebdev4
 SUBDIR+=	kdewebkit
 SUBDIR+=	lhs
+SUBDIR+=	libecap
 SUBDIR+=	libghttp
 SUBDIR+=	libgtkhtml
 SUBDIR+=	libmediawiki
@@ -515,6 +517,7 @@ SUBDIR+=	p5-URI-FromHash
 SUBDIR+=	p5-URI-Nested
 SUBDIR+=	p5-URI-Query
 SUBDIR+=	p5-URI-db
+SUBDIR+=	p5-URI-ws
 SUBDIR+=	p5-VRML
 SUBDIR+=	p5-WWW-Amazon-Wishlist
 SUBDIR+=	p5-WWW-CSRF

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.82 2016/06/08 14:38:21 wiz Exp $
+# $NetBSD: Makefile,v 1.84 2016/06/23 20:12:23 ryoon Exp $
 
-VERREL=		5.1.3
+VERREL=		5.1.4
 VERRC=		2
 VER=		${VERREL}.${VERRC}
 DISTNAME=	libreoffice-${VER}
-PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://download.documentfoundation.org/libreoffice/src/${VERREL}/
 EXTRACT_SUFX=	.tar.xz
@@ -22,7 +21,7 @@ BUILDLINK_TRANSFORM+=	opt:-O2:-O
 
 .if !empty(MACHINE_PLATFORM:MNetBSD*)
 pre-build:
-	cd ${WRKSRC} && ${BUILD_MAKE_CMD} Executable_gengal && paxctl +m instdir/program/gengal.bin
+	cd ${WRKSRC} && ${BUILD_MAKE_CMD} Executable_gengal && ${TOOLS_PLATFORM.paxctl} +m instdir/program/gengal.bin
 .endif
 
 GCC_REQD+=	4.6

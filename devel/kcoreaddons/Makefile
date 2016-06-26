@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2016/05/26 08:29:04 markd Exp $
+# $NetBSD: Makefile,v 1.4 2016/06/21 17:59:07 joerg Exp $
 
 DISTNAME=	kcoreaddons-${KF5VER}
 CATEGORIES=	devel
@@ -8,7 +8,6 @@ COMMENT=	Addons to QtCore
 LICENSE=	gnu-lgpl-v2 AND gnu-lgpl-v2.1 AND modified-bsd
 
 .include "../../meta-pkgs/kf5/Makefile.common"
-
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../mk/fam.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.534 2016/06/05 00:47:40 ryoon Exp $
+# $NetBSD: Makefile,v 1.537 2016/06/20 08:20:34 kamil Exp $
 #
 
 COMMENT=	Audio tools
@@ -31,6 +31,7 @@ SUBDIR+=	amarok-kde3
 SUBDIR+=	amp
 SUBDIR+=	ampache
 SUBDIR+=	applerecords
+SUBDIR+=	ardour
 SUBDIR+=	ario
 SUBDIR+=	arts
 SUBDIR+=	asunder
@@ -245,6 +246,7 @@ SUBDIR+=	libgroove
 SUBDIR+=	libid3tag
 SUBDIR+=	libifp
 SUBDIR+=	liblastfm
+SUBDIR+=	liblo
 SUBDIR+=	libmad
 SUBDIR+=	libmatemixer
 SUBDIR+=	libmikmod
@@ -484,6 +486,7 @@ SUBDIR+=	xhippo
 SUBDIR+=	xine-alsa
 SUBDIR+=	xine-esound
 SUBDIR+=	xine-pulse
+SUBDIR+=	xjadeo
 SUBDIR+=	xmcd
 SUBDIR+=	xmix
 SUBDIR+=	xmmix

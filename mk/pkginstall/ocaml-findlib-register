@@ -1,4 +1,4 @@
-# $NetBSD: ocaml-findlib-register,v 1.1 2016/04/12 15:52:29 jaapb Exp $
+# $NetBSD: ocaml-findlib-register,v 1.3 2016/06/25 13:52:28 jaapb Exp $
 #
 # Generate an +OCAML_FINDLIB_REGISTER script that handles registration for
 # findlib after a binary installation
@@ -20,6 +20,8 @@ ECHO="@ECHO@"
 GREP="@GREP@"
 MV="@MV@"
 OCAML_FINDLIB_DIRS="@OCAML_FINDLIB_DIRS@"
+OCAML_FINDLIB_REGISTER="@OCAML_FINDLIB_REGISTER@"
+OCAML_SITELIBDIR="@OCAML_SITELIBDIR@"
 PWD_CMD="@PWD_CMD@"
 RM="@RM@"
 TOUCH="@TOUCH@"
@@ -43,22 +45,22 @@ case "${OCAML_FINDLIB_REGISTER_VERBOSE:-@OCAML_FINDLIB_REGISTER_VERBOSE@}" in
 	;;
 esac
 
-${TOUCH} ${LDCONF}.tmp
+${TOUCH} "${LDCONF}.tmp"
 for i in ${OCAML_FINDLIB_DIRS}
 do
-  ${GREP} -F -v -- "$i" < "${LDCONF}" >> "${LDCONF}.tmp"
+  ${GREP} -F -v -- "${OCAML_SITELIBDIR}/$i" < "${LDCONF}" > "${LDCONF}.tmp"
   case $ACTION in
   ADD)
     $echo "${PKGNAME}: adding $i to ${LDCONF}"
-    ${ECHO} "@PREFIX@/$i" >> "${LDCONF}.tmp"
+    ${ECHO} "@PREFIX@/${OCAML_SITELIBDIR}/$i" >> "${LDCONF}.tmp"
 	;;
 
   REMOVE)
     $echo "${PKGNAME}: removing $i from ${LDCONF}"
 	;;
   esac
+  ${MV} -f "${LDCONF}.tmp" "${LDCONF}"
 done
-${MV} -f "${LDCONF}.tmp" "${LDCONF}"
 
 EOF
 	${CHMOD} +x ./+OCAML_FINDLIB_REGISTER
