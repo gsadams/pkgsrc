@@ -86,7 +86,20 @@ find_full_tree_client(int fd, const char *bmake_path)
 		 * and should be added as a package path directly.
 		 */
 		if (memchr(cat, '/', cat_len) != NULL) {
-			add_job_pkgpath(cat, cat_len);
+			if (len_pkgs == allocated_pkgs) {
+				if (allocated_pkgs == 0) {
+					allocated_pkgs = 1024;
+					pkgs = xmalloc(sizeof(*pkgs) *
+							allocated_pkgs);
+				} else {
+					allocated_pkgs *= 2;
+					pkgs = xrealloc(pkgs,
+							sizeof(*pkgs) * allocated_pkgs);
+				}
+			}
+			pkgs[len_pkgs] = xasprintf("%.*s", (int)cat_len, cat);
+			len_pkgs_data += strlen(pkgs[len_pkgs]) + 1;
+			++len_pkgs;
 			cat += cat_len;
 			continue;
 		}
